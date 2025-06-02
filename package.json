@@ -1,0 +1,29 @@
+{
+  "name": "nano-fetch-ql",
+  "version": "0.0.1",
+  "description": "A minimalist graphql client based on fetch",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clementvtrd/NanoFetchQL.git"
+  },
+  "keywords": [
+    "typescript",
+    "library"
+  ],
+  "author": {
+    "name": "clementvtrd",
+    "email": "84911237+clementvtrd@users.noreply.github.com",
+    "url": "https://clementvtrd.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "yarn@4.9.1"
+}
