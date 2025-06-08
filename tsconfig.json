@@ -10,6 +10,6 @@
     "strict": true,
     "target": "esnext",
   },
-  "include": ["src/index.ts"],
+  "include": ["src/nano-ql-client.ts"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }

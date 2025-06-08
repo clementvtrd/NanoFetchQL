@@ -4,9 +4,31 @@
   "description": "A minimalist graphql client based on fetch",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "packageManager": "yarn@4.9.1",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"No tests specified\" && exit 0"
+    "test": "jest"
+  },
+  "dependencies": {
+    "graphql": "^16.11.0"
+  },
+  "peerDependencies": {
+    "graphql-tag": "*"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "graphql-tag": "^2.12.6",
+    "jest": "^29.7.0",
+    "jest-fetch-mock": "^3.0.3",
+    "node-ts": "^8.0.5",
+    "ts-jest": "^29.3.4",
+    "typescript": "^5.8.3"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "clementvtrd",
+    "email": "84911237+clementvtrd@users.noreply.github.com",
+    "url": "https://clementvtrd.com"
   },
   "repository": {
     "type": "git",
@@ -14,16 +36,8 @@
   },
   "keywords": [
     "typescript",
-    "library"
-  ],
-  "author": {
-    "name": "clementvtrd",
-    "email": "84911237+clementvtrd@users.noreply.github.com",
-    "url": "https://clementvtrd.com"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "typescript": "^5.8.3"
-  },
-  "packageManager": "yarn@4.9.1"
+    "library",
+    "graphql",
+    "client"
+  ]
 }
