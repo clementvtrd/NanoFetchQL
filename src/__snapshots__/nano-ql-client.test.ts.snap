@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`allows cancelling a request via AbortController 1`] = `
+{
+  "body": "{"query":"{\\n  wait\\n}"}",
+  "headers": {
+    "Content-Type": "application/json",
+  },
+  "method": "POST",
+}
+`;
+
+exports[`merges RequestInit options with internal options 1`] = `
+{
+  "body": "{"query":"{\\n  ping\\n}"}",
+  "cache": "no-store",
+  "headers": {
+    "Authorization": "Bearer token",
+    "Content-Type": "application/json",
+  },
+  "method": "POST",
+}
+`;
+
+exports[`sends simple graphql request 1`] = `
+{
+  "data": {
+    "hello": "world",
+  },
+}
+`;
+
+exports[`sends simple graphql request 2`] = `
+{
+  "body": "{"query":"{\\n  hello\\n}"}",
+  "headers": {
+    "Content-Type": "application/json",
+  },
+  "method": "POST",
+}
+`;
+
+exports[`sends variables and operation name 1`] = `
+{
+  "body": "{"query":"query GetUser($id: ID!) {\\n  user(id: $id) {\\n    name\\n  }\\n}","variables":{"id":"123"},"operationName":"GetUser"}",
+  "headers": {
+    "Content-Type": "application/json",
+  },
+  "method": "POST",
+}
+`;
+
+exports[`throws an error if the response contains GraphQL errors 1`] = `
+{
+  "body": "{"query":"{\\n  fail\\n}"}",
+  "headers": {
+    "Content-Type": "application/json",
+  },
+  "method": "POST",
+}
+`;
